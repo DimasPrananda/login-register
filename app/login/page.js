@@ -19,7 +19,7 @@ export default function Home() {
             </div>
             <div className=" py-10">
               <h2 className=" text-2xl font-bold text-blue-300 mb-2">
-                Bergabunglah Sekarang!
+                Masuk ke akun Anda sekarang!
               </h2>
               <div className=" border-2 w-10 border-blue-300 inline-block mb-2"></div>
               <div className=" flex justify-center my-2">
@@ -43,18 +43,9 @@ export default function Home() {
                 </a>
               </div>
               <p className=" text-gray-400 my-3">
-                atau daftar menggunakan email
+                atau masuk menggunakan email
               </p>
               <div className=" flex flex-col items-center mb-2">
-                <div className=" bg-gray-100 w-64 flex items-center p-1 mb-3">
-                  <FaUserAlt className=" text-gray-400 m-2" />
-                  <input
-                    type="name"
-                    name="name"
-                    placeholder="Masukan Nama"
-                    className=" bg-gray-100 outline-none text-sm flex-1"
-                  />
-                </div>
                 <div className=" bg-gray-100 w-64 flex items-center p-1 mb-3">
                   <FaRegEnvelope className=" text-gray-400 m-2" />
                   <input
@@ -73,12 +64,21 @@ export default function Home() {
                     className=" bg-gray-100 outline-none text-sm flex-1"
                   />
                 </div>
+                <div className=" flex justify-between w-64 mb-5">
+                  <label className=" flex items-center text-xs">
+                    <input type="checkbox" name="remember" className=" mr-1" />
+                    Remember me
+                  </label>
+                  <a href="#" className=" text-xs hover:text-blue-400">
+                    Forgot Password?
+                  </a>
+                </div>
               </div>
               <a
                 href="#"
                 className=" border-2 rounded-full py-2 px-12 inline-block font-semibold hover:bg-blue-300 hover:text-white"
               >
-                Sign Up
+                Sign In
               </a>
             </div>
           </div>
@@ -86,14 +86,13 @@ export default function Home() {
             <h2 className=" text-3xl font-bold mb-2">Hello, Friend!</h2>
             <div className=" border-2 w-10 border-white inline-block mb-2"></div>
             <p className=" mb-10">
-              Selamat datang! Silakan masuk ke akun Anda untuk mengakses layanan
-              kami.
+              Isi informasi pribadi dan mulailah perjalanan bersama kami.
             </p>
             <a
-              href="./login"
+              href="./"
               className=" border-2 rounded-full py-2 px-12 inline-block font-semibold hover:bg-white hover:text-blue-300"
             >
-              Sign In
+              Sign Up
             </a>
           </div>
         </div>
